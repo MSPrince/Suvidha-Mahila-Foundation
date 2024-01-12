@@ -1,0 +1,119 @@
+
+/* <!--=================================Meet Our team Section==============================================  --> */
+    .bodyy {
+      background-image:
+        linear-gradient(45deg,
+          rgba(210, 229, 226, 0.4),
+          rgba(159, 172, 230, .4));
+      padding: 40px 20px 40px 20px;
+      background-attachment: fixed;
+      letter-spacing: 0.7px;
+    }
+
+      .bodyy h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #fdbe33;
+}
+  .bodyy h2 span {
+    color: black;
+        font-size: 25px;
+    font-weight: 500;
+}
+
+    /* cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(308px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-gap: 10px;
+      color: var(--title);
+    }
+
+    .card-info-wrapper {
+      height: 150px;
+      display: grid;
+    }
+
+    .card-info-wrapper>h2 {
+      margin: -3px 0 0 0;
+      font-size: 1rem;
+    }
+
+    .card-info-wrapper>h3 {
+      margin: 5px 0 0 0;
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      color: var(--text);
+      letter-spacing: 0.2px;
+      margin-top: 0;
+      font-size: 0.8rem;
+
+    }
+
+    .card .icons-wrapper {
+      align-self: end;
+      margin: 0 0 -7px 0;
+    }
+
+    .card .icons-wrapper>a {
+      text-decoration: none;
+    }
+
+    .card-img {
+      width: 100%;
+    }
+
+    /* style svg icons */
+    svg[class*="icon-"] {
+      width: 23px;
+      height: 23px;
+      fill: rgb(83, 94, 126);
+    }
+
+    .icon-twitter:hover {
+      fill: rgb(29, 161, 242);
+    }
+
+    .icon-github:hover {
+      fill: rgb(36, 41, 46);
+    }
+
+    .icon-behance:hover {
+      fill: rgb(0, 87, 255);
+    }
+
+    .icon-codepen:hover {
+      fill: rgb(19, 20, 23);
+    }
+
+    .icon-dribble:hover {
+      fill: rgb(234, 76, 137);
+    }
+
+    .icon-vimeo:hover {
+      fill: rgb(19, 147, 205);
+    }
+
+    .icon-instagram:hover {
+      fill: rgb(193, 53, 132);
+    }
+
+    .icon-linkedin:hover {
+      fill: rgb(40, 103, 178);
+    }
+/* <!--=================================Meet Our team Section==============================================  --> */
+
+

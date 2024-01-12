@@ -1,0 +1,88 @@
+.flex {
+display: flex;
+justify-content: space-between;
+
+}
+
+/* start: services styles */
+#services {
+    background: #f8f9fa;
+    padding: 2rem 0;
+    margin: 0rem 0;
+    border-bottom: 1px solid #dee2e6;
+    /* border: 2px solid red; */
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #fdbe33;
+}
+#services h2 span {
+    color: black;
+        font-size: 25px;
+    font-weight: 500;
+}
+
+#services .flex {
+    flex-wrap: wrap;
+}
+
+#services .flex > div {
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+#services .flex > div .fas {
+    color: #f69314;
+    font-size: 40px;
+    float: left;
+    margin-top: 15px;
+    width: 20%;
+    text-align: center;
+}
+
+#services .flex > div .services-card-right {
+    float: right;
+    width: 75%;
+}
+
+#services .flex > div a {
+    color: #f69314;
+    text-decoration: none;
+}
+
+#services .flex > div a:hover {
+    text-decoration: underline;
+}
+/* end: services styles */
+
+
+
+@media (max-width: 767px) {
+
+
+    #services .flex > div {
+        width: 48%;
+    }
+
+
+
+
+
+ 
+}
+
+@media (max-width: 500px) {
+     #services {
+        padding: 4rem 0 3rem;
+        margin: 4rem 0;
+    }
+
+    #services .flex > div {
+        width: 100%;
+    }
+
+}

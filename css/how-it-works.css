@@ -1,0 +1,69 @@
+.flex {
+display: flex;
+justify-content: space-between;
+
+}
+
+/* start: how it works styles */
+#how-it-works {
+    padding: 1rem 0;
+    background: #f8f9fa;
+    text-align: center;
+    /* border: 2px solid red; */
+    background: url(../asset/image/how-it-works/bbbbb.png);
+     /* filter: blur(1px); */
+    background-size: cover;
+}
+
+#how-it-works h2 {
+    margin-bottom: 3rem;
+    color: #fdbe33;
+    font-size: 30px;
+    font-weight: 600;
+    
+    
+}
+
+#how-it-works .flex > div {
+    width: 30%;
+}
+
+#how-it-works h4 {
+    color: #fff;
+    margin-top: 1.8rem;
+    font-weight: 800;
+    font-size: 20px;
+}
+#how-it-works p{
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#how-it-works span.fas {
+    color: #f69314;
+    font-size: 35px;
+}
+/* end: how it works styles */
+
+
+/* start: media queries */
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #how-it-works .flex {
+        display: block;
+    }
+
+    #how-it-works .flex > div {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

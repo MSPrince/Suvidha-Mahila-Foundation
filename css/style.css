@@ -43,9 +43,9 @@ body {
     height: 100%;
 }
 
-.carousel {
+/* .carousel {
     margin-bottom: 60px;
-}
+} */
 
 .carousel-caption {
     z-index: 10;
@@ -65,17 +65,17 @@ body {
 }
 
 .carousel .carousel-inner .bg1 {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/spiderweb.jpg');
+    background-image: url('../asset/image/banner/slider1.jpg');
     background-position: center top;
 }
 
 .carousel .carousel-inner .bg2 {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg');
+    background-image: url('../asset/image/banner/slider2.jpg');
     background-position: center center;
 }
 
 .carousel .carousel-inner .bg3 {
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/woman-camera.jpg');
+    background-image: url('../asset/image/banner/slider3.jpg');
     background-position: center bottom;
 }
 
@@ -159,4 +159,9 @@ margin-top: 10px;
 
 .image-paragraph {
 margin-top: 10px;
+}
+
+.nav-item a{
+    font-size: 1.3rem;
+    color: #fdbe33;
 }

@@ -7,22 +7,27 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
- <link rel="stylesheet" href="./css/style.css">
- <link rel="stylesheet" href="./css/footer.css">
- <link rel="stylesheet" href="./css/testimonial.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/testimonial.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/how-it-works.css">
+    <link rel="stylesheet" href="./css/our-team-section.css">
+    <link rel="stylesheet" href="./css/gallery.css">
 </head>
 
 <body>
-<!-- ===================================navbar -->
+    <!-- ===================================navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="SuvidhaLogo.png" alt="" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="SuvidhaLogo.png" alt="" class="logo img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -39,57 +44,57 @@
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact Us</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <button class="btn btn-outline-success"  role="button" data-toggle="modal" data-target="#contentModal">Help Us</button>
-                </form>
+                <!-- <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success" role="button" data-toggle="modal"
+                                data-target="#contentModal">Help Us</button>
+                </form> -->
             </div>
         </div>
     </nav>
 
 
+    <!-- cotact us and thanku Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contact Form -->
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Phone No:</label>
+                            <input type="tel" class="form-control" id="tel" name="tel" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                    </form>
 
-<!-- ======================================= -->
-<!-- cotact us and thanku Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                    <!-- Thank you message -->
+                    <div class="thank-you-message" id="thankYouMessage">
+                        <p>Thank you for connecting with us!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <!-- Contact Form -->
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Phone No:</label>
-                <input type="tel" class="form-control" id="tel" name="tel" required>
-              </div>
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary mt-4">Submit</button>
-          </form>
-  
-          <!-- Thank you message -->
-          <div class="thank-you-message" id="thankYouMessage">
-            <p>Thank you for connecting with us!</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-<!-- ============================================ -->
+    <!-- ============================================ -->
 
 
 
@@ -100,13 +105,15 @@
                 <div class="bg bg1"></div>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1 class="hidden-xs">Example headline.</h1>
-                        <h1 class="visible-xs">Example headline for small screens.</h1>
-                        <p class="hidden-xs">Note: If you're viewing this page via a <code>file://</code> URL, the
-                            "next" and "previous" Glyphicon buttons on the left and right might not load/display
-                            properly due to web browser security rules.</p>
-                        <p class="visible-xs">Note for small screens.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal" data-target="#contentModal">Donate Now</a></p>
+                        <!-- <h1 class="hidden-xs">A world where it should never hurt to be a child</h1> -->
+                        <h1 class="visible-xs">A world where it should never hurt to be a child</h1>
+                        <!-- <p class="hidden-xs">We ask you to participate in our mission to bring a ray of hope and sunshine in the <br>lives of those who are less
+                        fortunate than us.</p> -->
+                        <p class="visible-xs">We ask you to participate in our mission to bring a ray of hope and
+                            sunshine in the <br>lives of those who are less
+                            fortunate than us</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal"
+                                data-target="#contentModal">Donate Now</a></p>
                     </div>
                 </div>
             </div>
@@ -114,11 +121,11 @@
                 <div class="bg bg2"></div>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1 class="hidden-xs">Another example headline.</h1>
-                        <h1 class="visible-xs">Another example headline for small screens.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal" data-target="#contentModal">Donate Now</a></p>
+                        <!-- <h1 class="hidden-xs">Get involved and help some of the world’s most vulnerable children..</h1> -->
+                        <h1 class="visible-xs">Get involved and help some of the world’s most vulnerable children.</h1>
+                        <p>Keeping children safe and free from harm is what we believe in and what we do..</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal"
+                                data-target="#contentModal">Donate Now</a></p>
                     </div>
                 </div>
             </div>
@@ -126,11 +133,11 @@
                 <div class="bg bg3"></div>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1 class="hidden-xs">One more for good measure.</h1>
-                        <h1 class="visible-xs">One more for good measure for small screens.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal" data-target="#contentModal">Donate Now</a></p>
+                        <!-- <h1 class="hidden-xs">We go by the mantra that No Child is Born to Die.</h1> -->
+                        <h1 class="visible-xs">We go by the mantra that No Child is Born to Die.</h1>
+                        <p>We work relentlessly to ensure that children grow up healthy and enjoy a happy childhood.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal"
+                                data-target="#contentModal">Donate Now</a></p>
                     </div>
                 </div>
             </div>
@@ -147,279 +154,598 @@
     <!-- /end Carousel 100% Fullscreen -->
 
 
-<!-- help us Modal -->
-<div class="modal fade" id="contentModal" tabindex="-1" role="dialog" aria-labelledby="contentModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="contentModalLabel">Content</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!-- Image Container -->
-          <div class="image-container">
-            <!-- Add your image URL here -->
-            <img src="https://w7.pngwing.com/pngs/1004/394/png-transparent-barcode-qr-code-data-matrix-international-article-number-qr-codes-miscellaneous-label-text-thumbnail.png" alt="Image" class="img-fluid">
-          </div>
-  
-          <!-- Image Heading and Paragraph -->
-          <div>
-            <h3 class="image-heading">Image Heading</h3>
-            <p class="image-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ====================================testimonial section ================================ -->
-<div class="container-fluid testimonial-container">
-    <div class="container mt-2 ">
-         <h2 class="text-center mb-4">Testimonials</h2>
-         <p class="text-center mb-2" style="margin-top: -20px;">What people are talking about our charity activities</p>
-
-         <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                   <!-- Testimonial Items -->
-                   <div class="carousel-item active">
-                        <div class="testimonial-item">
-                             <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Customer 1" class="testimonial-image">
-                             <p class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing
-                                  elit. Nullam vel justo vitae elit pretium rutrum."</p>
-                             <h4 class="testimonial-author">John Doe</h4>
-                        </div>
-                   </div>
-                   <div class="carousel-item">
-                        <div class="testimonial-item">
-                             <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Customer 2" class="testimonial-image">
-                             <p class="testimonial-quote">"Integer malesuada purus nec massa sagittis, sit amet
-                                  egestas orci gravida."</p>
-                             <h4 class="testimonial-author">Jane Smith</h4>
-                        </div>
-                   </div>
-                   <!-- Add more testimonial items as needed -->
-
-              </div>
-              <!-- Navigation Arrows -->
-              <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                   <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
-                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                   <span class="sr-only">Next</span>
-              </a>
-         </div>
-
-    </div>
-</div>
-<!-- ==============================================testimonial section end ================================ -->
-
-
-
-
-     
-<!-- -------------------------------------------------------------------footer start -------------------------------------------------------------------------------->
-<footer class="footer-section">
-    <div class="container">
-        <div class="footer-cta py-2">
-            <div class="row">
-                <div class="col-sm-6 col-xl-4 mb-30">
-                    <div class="single-cta">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="cta-text">
-                            <h4>Find us</h4>
-                            <span>khanpur Akbar Jaunpur 222001</span>
-                        </div>
-                    </div>
+    <!-- help us Modal -->
+    <div class="modal fade" id="contentModal" tabindex="-1" role="dialog" aria-labelledby="contentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="contentModalLabel">Account Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-sm-6 col-xl-4 mb-30">
-                    <div class="single-cta">
-                        <i class="fas fa-phone"></i>
-                        <div class="cta-text">
-                            <h4>Call us</h4>
-                            <span>7897173138</span>
-                        </div>
+                <div class="modal-body">
+                    <!-- Image Container -->
+                    <div class="image-container">
+                        <!-- Add your image URL here -->
+                        <img src="./asset/image/qr-code/Screenshot 2024-01-12 221439.png" alt="Image" class="img-fluid">
                     </div>
-                </div>
-                <div class="col-sm-6 col-xl-4 mb-30">
-                    <div class="single-cta">
-                        <i class="fas fa-envelope-open"></i>
-                        <div class="cta-text">
-                            <h4>Mail us</h4>
-                            <span>manseeprince06@gmail.com</span>
-                        </div>
+
+                    <!-- Image Heading and Paragraph -->
+                    <div>
+                        <h3 class="image-heading">For Indian Donors</h3>
+                        <p class="image-paragraph">
+                            Bank Of Baroda <br>
+                            City: Nagpur <br>
+                            Contact No: +91 8010996763 <br>
+                            Account Name: Suvidha Mahila Mandal <br>
+                            Suvidha Account No: 97840100027609 <br>
+                            IFSC Code: BARB0DBKPAR</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="footer-content py-3">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                            <a href="#"><img decoding="async" src="./image/logo2.png" class="img-fluid"></a>
-                        </div>
-                        <div class="footer-text">
-                            <p>An online doctor consultation has many advantages over an in-person consultation.
-                                You
-                                can
-                                easily avoid the wait time
-                                associated with in-person appointments. Additionally, you can take as much time
-                                as
-                                you
-                                need during the consultation
-                                without feeling rushed.</p>
-                        </div>
-                        <div class="footer-social-icon">
-                            <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Video Consultant</a></li>
-                            <li><a href="#">Medicine</a></li>
-                            <li><a href="#">Lab Test</a></li>
-                            <li><a href="#">Find Doctor</a></li>
-                            <li><a href="#">Comman Disease</a></li>
-                            <li><a href="#">Latest News</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Subscribe</h3>
-                        </div>
-                        <div class="footer-text">
-                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <button><i class="fab fa-telegram-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-    <div class="copyright-area">
+
+
+
+    <!--==============================service service service============================================  -->
+    <section id="services">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text mb-3">
-                        <p>Copyright © 2021, All Right Reserved <a href="#">A Doctor's Diary</a></p>
+            <h2>What We Do? <br><span>Causes for a Sustainable Future</span></h2>
+            <div class="flex">
+                <div>
+                    <div class="fa-solid fa-bowl-food" style='font-size:48px;color:#eead0d'></div>
+                    <div class="services-card-right">
+                        <h3>Healthy Food</h3>
+                        <p>
+                            By focusing on healthy food donations, our NGO aims to improve the well-being and quality of
+                            life for individuals and
+                            communities in need.</p>
+                        <a href="#">Read More</a>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 text-center pt-3 d-none d-lg-block">
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Policy</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+
+                <div>
+                    <div class="fa-solid fa-house" style='font-size:48px;color:#eead0d'></div>
+                    <div class="services-card-right">
+                        <h3>Social Awareness</h3>
+                        <p>
+                            We provide resources, conduct awareness campaigns, and facilitate access to hygiene
+                            facilities,
+                            aiming to create a
+                            healthier environment and prevent the spread of diseases.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fa-solid fa-tree" style='font-size:48px;color:#eead0d'></div>
+                    <div class="services-card-right">
+                        <h3>Tree Plantation</h3>
+                        <p>
+                            Through community engagement and active participation, we successfully planted thousands of
+                            trees, fostering a greener
+                            and healthier ecosystem for future generations.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fa-solid fa-notes-medical" style='font-size:48px;color:#eead0d'></div>
+                    <div class="services-card-right">
+                        <h3>Health Care</h3>
+                        <p>
+                            We believe that access to healthcare is a fundamental right, and we work tirelessly to
+                            ensure
+                            that healthcare services
+                            are accessible, affordable, and of high quality for those in need.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fa-solid fa-school" style='font-size:48px;color:#eead0d'></div>
+                    <div class="services-card-right">
+                        <h3>Primary Education</h3>
+                        <p>
+                            By collaborating with local communities and educators, we aim to empower children with the
+                            knowledge and skills they
+                            need for a brighter future.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="fa-solid fa-person" style='font-size:48px;color:#eead0d'></div>
+                    <div class="services-card-right">
+                        <h3>Social Care</h3>
+                        <p>
+                            Our programs encompass a range of support services, including counseling, vocational
+                            training,
+                            and advocacy, with the
+                            goal of empowering individuals</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================service service service============================================  -->
+
+
+
+    <!--==============================how it works========================================================  -->
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="flex">
+                <div>
+                    <span class="fa fa-person" style="font-size:48px;color:#eead0d"></span>
+                    <h4>3 L<sup>+</sup></h4>
+                    <p>Volunteers </p>
+                </div>
+
+                <div>
+                    <span class="fa-solid fa-bullseye" style="font-size:48px;color:#eead0d"></span>
+                    <h4>1 Cr<sup>+</sup></h4>
+                    <p>Internship Goal</p>
+                </div>
+
+                <div>
+                    <span class="fa-solid fa-tree" style="font-size:48px;color:#eead0d"></span>
+                    <h4>34 L<sup>+</sup></h4>
+                    <p>Trees Planted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================how it works========================================================  -->
+
+
+
+
+    <!--=================================Meet Our team Section==================================================  -->
+    <div class="bodyy">
+
+        <h2>Meet Our Team<br><span>Awesome guys behind our charity activities</span></h2>
+
+
+        <svg style="display: none;">
+            <defs>
+                <symbol id="icon-twitter" viewBox="0 0 32 32" aria-labeledby="title">
+                    <title>twitter icon</title>
+                    <path
+                        d="M 28 8.558594 C 27.117188 8.949219 26.167969 9.214844 25.171875 9.332031 C 26.1875 8.722656 26.96875 7.757813 27.335938 6.609375 C 26.386719 7.171875 25.332031 7.582031 24.210938 7.804688 C 23.3125 6.847656 22.03125 6.246094 20.617188 6.246094 C 17.898438 6.246094 15.691406 8.453125 15.691406 11.171875 C 15.691406 11.558594 15.734375 11.933594 15.820313 12.292969 C 11.726563 12.089844 8.097656 10.128906 5.671875 7.148438 C 5.246094 7.875 5.003906 8.722656 5.003906 9.625 C 5.003906 11.332031 5.871094 12.839844 7.195313 13.722656 C 6.386719 13.695313 5.628906 13.476563 4.964844 13.105469 C 4.964844 13.128906 4.964844 13.148438 4.964844 13.167969 C 4.964844 15.554688 6.660156 17.546875 8.914063 17.996094 C 8.5 18.109375 8.066406 18.171875 7.617188 18.171875 C 7.300781 18.171875 6.988281 18.140625 6.691406 18.082031 C 7.316406 20.039063 9.136719 21.460938 11.289063 21.503906 C 9.605469 22.824219 7.480469 23.609375 5.175781 23.609375 C 4.777344 23.609375 4.386719 23.585938 4 23.539063 C 6.179688 24.9375 8.765625 25.753906 11.546875 25.753906 C 20.605469 25.753906 25.558594 18.25 25.558594 11.742188 C 25.558594 11.53125 25.550781 11.316406 25.542969 11.105469 C 26.503906 10.410156 27.339844 9.542969 28 8.558594 Z" />
+                </symbol>
+
+                <symbol id="icon-instagram" viewBox="0 0 30 30" aria-labeledby="title">
+                    <title>instagram icon</title>
+                    <path
+                        d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z" />
+                </symbol>
+
+                <symbol id="icon-linkedin" viewBox="0 0 30 30" aria-labeledby="title">
+                    <title>linkedin icon</title>
+                    <path
+                        d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z" />
+                </symbol>
+            </defs>
+        </svg>
+
+        <div class="cards">
+            <div class="card">
+                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <div class="card-info-wrapper">
+                    <h2>Shobha Motghare</h2>
+                    <h3 class="card-description">Secretary</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- use some icons defined in defs -->
+                    <div class="icons-wrapper">
+                        <a href="#">
+                            <svg class="icon-twitter">
+                                <use xlink:href="#icon-twitter" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-instagram">
+                                <use xlink:href="#icon-instagram" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-linkedin">
+                                <use xlink:href="#icon-linkedin" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <div class="card-info-wrapper">
+                    <h2>Payal Badhe</h2>
+                    <h3 class="card-description">President</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- use some icons defined in defs -->
+                    <div class="icons-wrapper">
+                        <a href="#">
+                            <svg class="icon-twitter">
+                                <use xlink:href="#icon-twitter" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-instagram">
+                                <use xlink:href="#icon-instagram" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-linkedin">
+                                <use xlink:href="#icon-linkedin" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <div class="card-info-wrapper">
+                    <h2>Bharti Shendre
+                    </h2>
+                    <h3 class="card-description">Treasurer</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- use some icons defined in defs -->
+                    <div class="icons-wrapper">
+                        <a href="#">
+                            <svg class="icon-twitter">
+                                <use xlink:href="#icon-twitter" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-instagram">
+                                <use xlink:href="#icon-instagram" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-linkedin">
+                                <use xlink:href="#icon-linkedin" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <div class="card-info-wrapper">
+                    <h2>RNilima Kalambe
+                    </h2>
+                    <h3 class="card-description">Advisor</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- use some icons defined in defs -->
+                    <div class="icons-wrapper">
+                        <a href="#">
+                            <svg class="icon-twitter">
+                                <use xlink:href="#icon-twitter" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-instagram">
+                                <use xlink:href="#icon-instagram" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-linkedin">
+                                <use xlink:href="#icon-linkedin" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <div class="card-info-wrapper">
+                    <h2>M S Prince</h2>
+                    <h3 class="card-description">Web Designer</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- use some icons defined in defs -->
+                    <div class="icons-wrapper">
+                        <a href="#">
+                            <svg class="icon-twitter">
+                                <use xlink:href="#icon-twitter" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-instagram">
+                                <use xlink:href="#icon-instagram" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="icon-linkedin">
+                                <use xlink:href="#icon-linkedin" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!--=================================Meet Our team Section==================================================  -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================================================================================== -->
+    <div class="container-fluid image-gallery-modal">
+        <h1 class="container-heading"> Event Gallery</h1>
+        <div class="image-button-container">
+            <!-- Image button -->
+            <div class="image-button">
+                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Image 1 Heading</h5>
+                    <p>Description for Image 1</p>
+                </div>
+            </div>
+            <!-- Image button -->
+            <div class="image-button">
+                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Image 2 Heading</h5>
+                    <p>Description for Image 2</p>
+                </div>
+            </div>
+            <div class="image-button">
+                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Image 3 Heading</h5>
+                    <p>Description for Image 3</p>
+                </div>
+            </div>
+            <div class="image-button">
+                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Image 4 Heading</h5>
+                    <p>Description for Image 4</p>
+                </div>
+            </div>
+            <div class="image-button">
+                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Image 5 Heading</h5>
+                    <p>Description for Image 5</p>
+                </div>
+            </div>
+            <div class="image-button">
+                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Image 6 Heading</h5>
+                    <p>Description for Image 6</p>
+                </div>
+            </div>
+            <!-- Add more image buttons as needed -->
+        </div>
+    
+        <!-- The Modal -->
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="modal-grid">
+                                <img src="https://media.gettyimages.com/id/128110663/photo/rekha-bollywood-actress-with-princess-bhargavi-kumari-mewar-and-her-daughter-at-holi-festival.jpg?s=612x612&w=0&k=20&c=xr4YMJjkPmbOAqPrb2uoWED72yUAP5eFQUSHevSQs54="
+                                    class="img-fluid" alt="Gallery Image">
+                                <!-- Add more images as needed -->
+                                <img src="https://images.pexels.com/photos/1253364/pexels-photo-1253364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="img-fluid" alt="Gallery Image">
+                                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_1704426297100.jpg"
+                                    class="img-fluid" alt="Gallery Image">
+                                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_1704426297100.jpg"
+                                    class="img-fluid" alt="Gallery Image">
+                                <img src="https://images.filmibeat.com/webp/ph-big/2020/02/actresses-who-look-hot-in-red_158165968520.jpg"
+                                    class="img-fluid" alt="Gallery Image">
+                                <img src="https://images.filmibeat.com/webp/ph-big/2023/12/megha-shukla-looks-stunning-photoshoot_1703654923130.jpg"
+                                    class="img-fluid" alt="Gallery Image">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-</footer>
-<!-- -------------------------------------------------------------------footer end -------------------------------------------------------------------------------->
+<!-- ================================================================================== -->
 
 
 
 
+    <!-- ====================================testimonial section ================================ -->
+    <div class="container-fluid testimonial-border">
+        <div class="container">
+            <div id="testimonialSlider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-container">
+                            <h2 class="testimonial-heading">Customer Testimonials</h2>
+                            <div class="testimonial-card">
+                                <img src="customer1.jpg" alt="Customer 1" class="testimonial-image">
+                                <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nulla facilisi."</p>
+                                <h5>Customer 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-container">
+                            <h2 class="testimonial-heading">Customer Testimonials</h2>
+                            <div class="testimonial-card">
+                                <img src="customer2.jpg" alt="Customer 2" class="testimonial-image">
+                                <p class="testimonial-text">"Pellentesque habitant morbi tristique senectus et
+                                    netus et malesuada fames ac turpis egestas."</p>
+                                <h5>Customer 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+                <a class="carousel-control-prev" href="#testimonialSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ==============================================testimonial section end ================================ -->
+
+
+
+
+
+    <!-- -------------------------------------------------------------------footer start -------------------------------------------------------------------------------->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta py-2">
+                <div class="row">
+                    <div class="col-sm-6 col-xl-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>khanpur Akbar Jaunpur 222001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>7897173138</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>manseeprince06@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-content py-3">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="#"><img decoding="async" src="./image/logo2.png" class="img-fluid"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>An online doctor consultation has many advantages over an in-person consultation.
+                                    You
+                                    can
+                                    easily avoid the wait time
+                                    associated with in-person appointments. Additionally, you can take as much time
+                                    as
+                                    you
+                                    need during the consultation
+                                    without feeling rushed.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Video Consultant</a></li>
+                                <li><a href="#">Medicine</a></li>
+                                <li><a href="#">Lab Test</a></li>
+                                <li><a href="#">Find Doctor</a></li>
+                                <li><a href="#">Comman Disease</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text mb-3">
+                            <p>Copyright © 2021, All Right Reserved <a href="#">A Doctor's Diary</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 text-center pt-3 d-none d-lg-block">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- -------------------------------------------------------------------footer end -------------------------------------------------------------------------------->
 
 
 
@@ -430,47 +756,16 @@
 
 
 
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/b3263a74b4.js" crossorigin="anonymous"></script>
-
-    <script>
-        // JavaScript to handle the window scroll event
-        window.onscroll = function () {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.body.classList.add("scrolled");
-                document.querySelector(".navbar").classList.add("scrolled");
-            } else {
-                document.body.classList.remove("scrolled");
-                document.querySelector(".navbar").classList.remove("scrolled");
-            }
-        };
 
 
 
-        // ========================================================
-        document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    // Assume successful form submission for demonstration
-    // In a real-world scenario, you would handle the form submission asynchronously
-    // (e.g., using AJAX) and display the thank you message accordingly
-    showThankYouMessage();
-  });
 
-  function showThankYouMessage() {
-    // Hide the form
-    document.getElementById('contactForm').style.display = 'none';
-    // Show the thank you message
-    document.getElementById('thankYouMessage').style.display = 'block';
-    // Close the modal after a delay (3 seconds in this example)
-    setTimeout(function () {
-      $('#contactModal').modal('hide');
-    }, 3000);
-  }
-        // ========================================================
-    </script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b3263a74b4.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
 
 </body>
 

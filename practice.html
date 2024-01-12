@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <style>
+          .image-gallery-modal{
+               border: 2px solid red;
+          }
+            .image-gallery-modal .container-heading {
+               text-align: center;
+               margin-top: 20px;
+               margin-bottom: 20px;
+               font-size: 24px;
+               color: #333; /* Adjust the color as needed */
+          }
+          /* Style for the modal */
+          .modal-content img {
+               width: 100%;
+               height: auto;
+          }
+
+          /* Style for the image button container */
+          .image-button-container {
+               display: grid;
+               grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+               gap: 15px;
+               margin: 15px;
+          }
+
+          /* Style for the image button */
+          .image-button {
+               cursor: pointer;
+               width: 100%;
+               /* Set a maximum width for the image buttons */
+               flex: 1 1 auto;
+               /* Allow flexible sizing while preventing overflow */
+               position: relative;
+               overflow: hidden;
+          }
+
+          .image-button img {
+               width: 100%;
+               height: auto;
+          }
+
+          .image-description {
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               width: 100%;
+               background: rgba(0, 0, 0, 0.7);
+               color: #fff;
+               padding: 10px;
+               box-sizing: border-box;
+               transition: 0.3s ease;
+          }
+
+          .image-button:hover .image-description {
+               bottom: -50px;
+          }
+
+          /* Style for the modal grid */
+          .modal-grid {
+               display: grid;
+               grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+               gap: 15px;
+               margin: 15px;
+          }
+          
+          .modal-grid img{
+               width: 300px;
+               height: 200px;
+
+          }
+          /* Style for the modal container */
+          .modal-container {
+               max-width: 800px;
+               margin: auto;
+          }
+
+          /* Style for the modal header */
+          .modal-header {
+               border-bottom: none;
+          }
+
+          /* Style for the modal body */
+          .modal-body {
+               padding: 0;
+          }
+     </style>
+</head>
+
+<body>
+
+
+     <div class="container-fluid image-gallery-modal">
+          <h1 class="container-heading"> Event Gallery</h1>
+     <div class="image-button-container">
+          <!-- Image button -->
+          <div class="image-button">
+               <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+               <div class="image-description">
+                    <h5>Image 1 Heading</h5>
+                    <p>Description for Image 1</p>
+               </div>
+          </div>
+          <!-- Image button -->
+          <div class="image-button">
+               <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+               <div class="image-description">
+                    <h5>Image 2 Heading</h5>
+                    <p>Description for Image 2</p>
+               </div>
+          </div>
+          <div class="image-button">
+               <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+               <div class="image-description">
+                    <h5>Image 3 Heading</h5>
+                    <p>Description for Image 3</p>
+               </div>
+          </div>
+          <div class="image-button">
+               <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+               <div class="image-description">
+                    <h5>Image 4 Heading</h5>
+                    <p>Description for Image 4</p>
+               </div>
+          </div>
+          <div class="image-button">
+               <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+               <div class="image-description">
+                    <h5>Image 5 Heading</h5>
+                    <p>Description for Image 5</p>
+               </div>
+          </div>
+          <div class="image-button">
+               <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+               <div class="image-description">
+                    <h5>Image 6 Heading</h5>
+                    <p>Description for Image 6</p>
+               </div>
+          </div>
+          <!-- Add more image buttons as needed -->
+     </div>
+
+     <!-- The Modal -->
+     <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+                    <div class="modal-body">
+                         <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                              <div class="modal-grid">
+                                   <img src="https://media.gettyimages.com/id/128110663/photo/rekha-bollywood-actress-with-princess-bhargavi-kumari-mewar-and-her-daughter-at-holi-festival.jpg?s=612x612&w=0&k=20&c=xr4YMJjkPmbOAqPrb2uoWED72yUAP5eFQUSHevSQs54="
+                                        class="img-fluid" alt="Gallery Image">
+                                   <!-- Add more images as needed -->
+                                   <img src="https://images.pexels.com/photos/1253364/pexels-photo-1253364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                        class="img-fluid" alt="Gallery Image">
+                                   <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_1704426297100.jpg"
+                                        class="img-fluid" alt="Gallery Image">
+                                   <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_1704426297100.jpg"
+                                        class="img-fluid" alt="Gallery Image">
+                                   <img src="https://images.filmibeat.com/webp/ph-big/2020/02/actresses-who-look-hot-in-red_158165968520.jpg"
+                                        class="img-fluid" alt="Gallery Image">
+                                   <img src="https://images.filmibeat.com/webp/ph-big/2023/12/megha-shukla-looks-stunning-photoshoot_1703654923130.jpg"
+                                        class="img-fluid" alt="Gallery Image">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

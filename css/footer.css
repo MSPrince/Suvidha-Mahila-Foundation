@@ -26,8 +26,9 @@ ul {
   .footer-section {
     background: var(--bg-color);
     position: relative;
+
     /* border: 10px solid red; */
-    margin-bottom: -400px;
+    /* margin-bottom: -400px; */
     border: 2px solid red;
    
   }
