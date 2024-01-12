@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <link rel="stylesheet" href="./css/style.css">
+ <link rel="stylesheet" href="./css/footer.css">
+ <link rel="stylesheet" href="./css/testimonial.css">
+</head>
+
+<body>
+<!-- ===================================navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="SuvidhaLogo.png" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Apply For Internship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success"  role="button" data-toggle="modal" data-target="#contentModal">Help Us</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+<!-- ======================================= -->
+<!-- cotact us and thanku Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contact Form -->
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Phone No:</label>
+                <input type="tel" class="form-control" id="tel" name="tel" required>
+              </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+          </form>
+  
+          <!-- Thank you message -->
+          <div class="thank-you-message" id="thankYouMessage">
+            <p>Thank you for connecting with us!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ============================================ -->
+
+
+
+    <!-- Carousel 100% Fullscreen -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bg bg1"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="hidden-xs">Example headline.</h1>
+                        <h1 class="visible-xs">Example headline for small screens.</h1>
+                        <p class="hidden-xs">Note: If you're viewing this page via a <code>file://</code> URL, the
+                            "next" and "previous" Glyphicon buttons on the left and right might not load/display
+                            properly due to web browser security rules.</p>
+                        <p class="visible-xs">Note for small screens.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal" data-target="#contentModal">Donate Now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg bg2"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="hidden-xs">Another example headline.</h1>
+                        <h1 class="visible-xs">Another example headline for small screens.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal" data-target="#contentModal">Donate Now</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="bg bg3"></div>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="hidden-xs">One more for good measure.</h1>
+                        <h1 class="visible-xs">One more for good measure for small screens.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal" data-target="#contentModal">Donate Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev d-none" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-none" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- /end Carousel 100% Fullscreen -->
+
+
+<!-- help us Modal -->
+<div class="modal fade" id="contentModal" tabindex="-1" role="dialog" aria-labelledby="contentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contentModalLabel">Content</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Image Container -->
+          <div class="image-container">
+            <!-- Add your image URL here -->
+            <img src="https://w7.pngwing.com/pngs/1004/394/png-transparent-barcode-qr-code-data-matrix-international-article-number-qr-codes-miscellaneous-label-text-thumbnail.png" alt="Image" class="img-fluid">
+          </div>
+  
+          <!-- Image Heading and Paragraph -->
+          <div>
+            <h3 class="image-heading">Image Heading</h3>
+            <p class="image-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ====================================testimonial section ================================ -->
+<div class="container-fluid testimonial-container">
+    <div class="container mt-2 ">
+         <h2 class="text-center mb-4">Testimonials</h2>
+         <p class="text-center mb-2" style="margin-top: -20px;">What people are talking about our charity activities</p>
+
+         <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                   <!-- Testimonial Items -->
+                   <div class="carousel-item active">
+                        <div class="testimonial-item">
+                             <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Customer 1" class="testimonial-image">
+                             <p class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                  elit. Nullam vel justo vitae elit pretium rutrum."</p>
+                             <h4 class="testimonial-author">John Doe</h4>
+                        </div>
+                   </div>
+                   <div class="carousel-item">
+                        <div class="testimonial-item">
+                             <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Customer 2" class="testimonial-image">
+                             <p class="testimonial-quote">"Integer malesuada purus nec massa sagittis, sit amet
+                                  egestas orci gravida."</p>
+                             <h4 class="testimonial-author">Jane Smith</h4>
+                        </div>
+                   </div>
+                   <!-- Add more testimonial items as needed -->
+
+              </div>
+              <!-- Navigation Arrows -->
+              <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Next</span>
+              </a>
+         </div>
+
+    </div>
+</div>
+<!-- ==============================================testimonial section end ================================ -->
+
+
+
+
+     
+<!-- -------------------------------------------------------------------footer start -------------------------------------------------------------------------------->
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta py-2">
+            <div class="row">
+                <div class="col-sm-6 col-xl-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>khanpur Akbar Jaunpur 222001</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>7897173138</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>manseeprince06@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content py-3">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="#"><img decoding="async" src="./image/logo2.png" class="img-fluid"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>An online doctor consultation has many advantages over an in-person consultation.
+                                You
+                                can
+                                easily avoid the wait time
+                                associated with in-person appointments. Additionally, you can take as much time
+                                as
+                                you
+                                need during the consultation
+                                without feeling rushed.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Video Consultant</a></li>
+                            <li><a href="#">Medicine</a></li>
+                            <li><a href="#">Lab Test</a></li>
+                            <li><a href="#">Find Doctor</a></li>
+                            <li><a href="#">Comman Disease</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <button><i class="fab fa-telegram-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text mb-3">
+                        <p>Copyright © 2021, All Right Reserved <a href="#">A Doctor's Diary</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 text-center pt-3 d-none d-lg-block">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- -------------------------------------------------------------------footer end -------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/b3263a74b4.js" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript to handle the window scroll event
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.body.classList.add("scrolled");
+                document.querySelector(".navbar").classList.add("scrolled");
+            } else {
+                document.body.classList.remove("scrolled");
+                document.querySelector(".navbar").classList.remove("scrolled");
+            }
+        };
+
+
+
+        // ========================================================
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    // Assume successful form submission for demonstration
+    // In a real-world scenario, you would handle the form submission asynchronously
+    // (e.g., using AJAX) and display the thank you message accordingly
+    showThankYouMessage();
+  });
+
+  function showThankYouMessage() {
+    // Hide the form
+    document.getElementById('contactForm').style.display = 'none';
+    // Show the thank you message
+    document.getElementById('thankYouMessage').style.display = 'block';
+    // Close the modal after a delay (3 seconds in this example)
+    setTimeout(function () {
+      $('#contactModal').modal('hide');
+    }, 3000);
+  }
+        // ========================================================
+    </script>
+
+</body>
+
+</html>

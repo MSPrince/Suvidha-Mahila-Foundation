@@ -1,0 +1,162 @@
+* a{
+    text-decoration: none;
+}
+
+
+/* Original styles for transparent navbar */
+.navbar {
+    background-color: transparent !important;
+}
+
+/* Additional styles for when window is scrolled 100px */
+body.scrolled {
+    padding-top: 100px; /* Adjust this value based on your navbar height */
+}
+
+.navbar.scrolled {
+    background-color: black !important;
+}
+
+.navbar.scrolled a {
+    color: white !important;
+}
+
+.navbar.scrolled .btn {
+    color: white !important;
+}
+
+/* Carousel styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel {
+    margin-bottom: 60px;
+}
+
+.carousel-caption {
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    /* Set text color to white or another suitable color */
+}
+
+.carousel .item {
+    background-color: #777;
+}
+
+.carousel .carousel-inner .bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.carousel .carousel-inner .bg1 {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/spiderweb.jpg');
+    background-position: center top;
+}
+
+.carousel .carousel-inner .bg2 {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg');
+    background-position: center center;
+}
+
+.carousel .carousel-inner .bg3 {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/woman-camera.jpg');
+    background-position: center bottom;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make text responsive */
+.carousel-caption h1,
+p,
+a {
+    margin: 0;
+}
+
+.carousel-caption p {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50%;
+    margin: 0;
+}
+
+
+/* ================================================================= */
+
+.neumorphic-container {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.modal-content {
+background-color: #ecf0f3;
+border-radius: 15px;
+box-shadow: 5px 5px 15px #bdc3c7, -5px -5px 15px #ffffff;
+}
+
+.neumorphic-button {
+background-color: #3498db;
+color: #fff;
+border: none;
+border-radius: 10px;
+padding: 10px 20px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.neumorphic-button:hover {
+background-color: #2980b9;
+}
+
+/* Hide thank you message by default */
+.thank-you-message {
+display: none;
+}
+
+/* Style for thank you message */
+.thank-you-message p {
+font-size: 18px;
+font-weight: bold;
+color: #3498db;
+}
+/* ========================================================== */
+.image-container {
+text-align: center;
+margin-top: 20px;
+}
+
+.image-container  img{
+width:100px;
+}
+.image-heading {
+font-size: 20px;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.image-paragraph {
+margin-top: 10px;
+}
