@@ -29,7 +29,7 @@ ul {
 
     /* border: 10px solid red; */
     /* margin-bottom: -400px; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
    
   }
   
@@ -39,7 +39,7 @@ ul {
   }
   
   .single-cta i {
-    color: #3fbbc0;
+    color: #fdbe33;
     font-size: 20px;
     float: left;
     margin-top: 8px;
@@ -85,7 +85,7 @@ ul {
   }
   
   .footer-social-icon span {
-    color: #3fbbc0;
+    color: #fdbe33;
     display: block;
     font-size: 16px;
     font-weight: 400;
@@ -135,7 +135,7 @@ ul {
     bottom: -15px;
     height: 2px;
     width: 50px;
-    background: #3fbbc0;
+    background: #fdbe33;
   }
   
   .footer-widget ul li {
@@ -148,7 +148,7 @@ ul {
   }
   
   .footer-widget ul li a:hover {
-    color: #3fbbc0;
+    color: #fdbe33;
   }
   
   .footer-widget ul li a {
@@ -165,14 +165,14 @@ ul {
     width: 100%;
     padding: 14px 20px;
     background: var(--light-black-2);
-    border: 1px solid #3fbbc0;
+    border: 1px solid #fdbe33;
     color: var(--white-color);
   }
   
   .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #3fbbc0;
+    background: #fdbe33;
     padding: 13px 20px;
     border: 1px solid var(--primary-color);
     top: 0;

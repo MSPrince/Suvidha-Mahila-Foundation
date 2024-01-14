@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="hi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <style>
+        .image-gallery-modal {
+    /* border: 2px solid red; */
+    margin: auto;
+    padding: 20px;
+}
+
+.gallery .image-gallery-modal .container-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.gallery .modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .image-button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+.gallery .image-button {
+    cursor: pointer;
+    width: 100%;
+    flex: 1 1 auto;
+    position: relative;
+    /* left: 40%; */
+    overflow: hidden;
+    /* border: 2px solid red; */
+    /* margin: auto; */
+}
+
+.gallery .image-button img {
+    width: 100%;
+    height: 270px;
+}
+
+.gallery .image-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 10px 2px 10px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.gallery .image-button:hover .image-description {
+    bottom: -92px;
+}
+
+.gallery .modal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 15px;
+}
+
+.gallery .modal-grid img {
+    width: 300px;
+    height: 200px;
+}
+
+.gallery .modal-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.gallery .modal-header {
+    border-bottom: none;
+}
+
+.gallery .modal-body {
+    padding: 0;
+}
+
+.gallery .image-button.hidden {
+    display: none;
+}
+
+.gallery #viewAllButton {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100px;
+    margin: auto;
+}
+
+.gallery #viewAllButton {
+margin-top: 20px;
+margin-bottom: 20px;
+cursor: pointer;
+text-align: center;
+padding: 10px;
+background-color: #007bff; /* Change the background color as needed */
+color: #fff; /* Change the text color as needed */
+border-radius: 5px; /* Add rounded corners */
+}
+
+.image-description p{
+    font-size: 13px;
+}
+
+.image-description h5{
+color: #fdbe33;
+}
+     </style>
+    </head>
+    <body>
+
+
+
+   
+    <!-- ================================================================================== -->
+    <div class="container-fluid gallery image-gallery-modal">
+        <h1 class="container-heading text-center"> Event Gallery</h1>
+        <div class="image-button-container">
+            <div class="image-button">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Tree Plantation
+                    </h5>
+                    <p> Join us in nurturing the Earth's embrace, one tree at a time. Together, let's create a greener
+                        tomorrow and breathe life into our planet</p>
+                </div>
+            </div>
+            <div class="image-button">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Fundraising Events
+                    </h5>
+                    <p> Unlock the power of generosity at our Fundraising Event. Your support will ignite positive
+                        change and uplift lives in our community.</p>
+                </div>
+            </div>
+            <div class="image-button">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Cloths Distribution
+                    </h5>
+                    <p> Providing warmth and dignity through clothing. Join us in our mission to bring smiles and
+                        comfort to those in need through our cloth distribution event.1</p>
+                </div>
+            </div>
+            <div class="image-button">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Women's Day
+                    </h5>
+                    <p> Celebrating the strength, resilience, and achievements of women worldwide on this special
+                        Women's Day. Together, let's honor their contributions.2</p>
+                </div>
+            </div>
+
+
+            <div class="image-button hidden">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Food Donationby Our NGO
+                    </h5>
+                    <p> Your generous contributions can fill empty plates and bring smiles to those in need. Together,
+                        we can create a world where everyone has access to nutritious meals.</p>
+                </div>
+            </div>
+            <div class="image-button hidden">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Ensuring Healthy Animals
+                    </h5>
+                    <p> Join us in providing sustenance and compassion to our furry companions. Together, let's make a
+                        positive impact on their lives through our Animal Feeding event.</p>
+                </div>
+            </div>
+            <div class="image-button hidden">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Sanitary Pads Distribution
+                    </h5>
+                    <p> Breaking barriers and promoting menstrual health with our Sanitary Pad Initiative. Together,
+                        let's empower women and ensure access to safe and dignified hygiene.</p>
+                </div>
+            </div>
+            <div class="image-button hidden">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Free Workshops
+                    </h5>
+                    <p> Discover new skills, ignite your passions, and embrace lifelong learning with our engaging and
+                        enriching free workshops.</p>
+                </div>
+            </div>
+            <div class="image-button hidden">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Book Distribution
+                    </h5>
+                    <p> Discover new skills, ignite your passions, and embrace lifelong learning with our engaging and
+                        enriching free workshops.</p>
+                </div>
+            </div>
+            <div class="image-button hidden">
+                <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQoyfqJkuQXiE-GBcfpKa0A1VChsouBJYyMdskKuC_ltUtz_OxIx2dIf4qv0qoZp9WSJGQYe-MNLI-tX5WpaXZk2Es5eF_fseoIAvLLbsI"
+                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <div class="image-description">
+                    <h5>Free Education
+                    </h5>
+                    <p> Discover new skills, ignite your passions, and embrace lifelong learning with our engaging and
+                        enriching free workshops.</p>
+                </div>
+            </div>
+            <!-- Add more hidden image buttons as needed -->
+        </div>
+        <div id="viewAllButton" class="view-all-button">View All</div>
+
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="modal-grid">
+                                <img src="https://media.gettyimages.com/id/128110663/photo/rekha-bollywood-actress-with-princess-bhargavi-kumari-mewar-and-her-daughter-at-holi-festival.jpg?s=612x612&w=0&k=20&c=xr4YMJjkPmbOAqPrb2uoWED72yUAP5eFQUSHevSQs54="
+                                    class="img-fluid" alt="Gallery Image">
+                                <!-- Add more images as needed -->
+                                <img src="https://images.pexels.com/photos/1253364/pexels-photo-1253364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    class="img-fluid" alt="Gallery Image">
+                                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_1704426297100.jpg"
+                                    class="img-fluid" alt="Gallery Image">
+                                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_1704426297100.jpg"
+                                    class="img-fluid" alt="Gallery Image">
+                                <img src="https://images.filmibeat.com/webp/ph-big/2020/02/actresses-who-look-hot-in-red_158165968520.jpg"
+                                    class="img-fluid" alt="Gallery Image">
+                                <img src="https://images.filmibeat.com/webp/ph-big/2023/12/megha-shukla-looks-stunning-photoshoot_1703654923130.jpg"
+                                    class="img-fluid" alt="Gallery Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================================================== -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b3263a74b4.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#viewAllButton').on('click', function () {
+                $('.image-button.hidden').removeClass('hidden');
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

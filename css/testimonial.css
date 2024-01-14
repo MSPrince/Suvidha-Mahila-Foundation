@@ -1,10 +1,11 @@
           .testimonial-border {
-               border: 2px solid red;
+               /* border: 2px solid red; */
                background-color: #f8f9fa;
+               height: 340px;
           }
 
           .testimonial-container {
-               border: 2px solid red;
+               /* border: 2px solid red; */
                max-width: 600px;
                margin: 25px auto;
           }
@@ -12,10 +13,16 @@
           .testimonial-heading {
                text-align: center;
                font-size: 30px;
-            
-               margin-bottom: 20px;
+               font-weight: 600;
+               margin-top: 20px;
+               margin-bottom: -20px;
+               color:  #fdbe33;;
           }
 
+          .testimonial-heading span{
+               font-size: 20px;
+               color: black;
+          }
           .testimonial-card {
                text-align: center;
                padding: 20px;
@@ -36,4 +43,10 @@
           .carousel-control-prev,
           .carousel-control-next {
                color: #000;
+          }
+
+          .testimonialll img{
+               /* border: 20px solid red; */
+               height: 100px;
+               width: 100px;
           }

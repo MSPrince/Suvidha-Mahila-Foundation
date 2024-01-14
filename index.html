@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="hi">
 
 <head>
     <meta charset="utf-8">
@@ -7,6 +8,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/testimonial.css">
@@ -14,13 +16,17 @@
     <link rel="stylesheet" href="./css/how-it-works.css">
     <link rel="stylesheet" href="./css/our-team-section.css">
     <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/year-wise-achivement.css">
 </head>
 
 <body>
-    <!-- ===================================navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="SuvidhaLogo.png" alt="" class="logo img-fluid"></a>
+            <a class="navbar-brand" href="#"><img
+                    src="https://www.suvidhafoundationedutech.org/img/SuvidhaLogo.png" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -29,164 +35,156 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="#">Event</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Apply For Internship</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact
+                            Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal1">Help Us</a>
                     </li>
                 </ul>
-                <!-- <form class="d-flex" role="search">
-                    <button class="btn btn-outline-success" role="button" data-toggle="modal"
-                                data-target="#contentModal">Help Us</button>
-                </form> -->
             </div>
         </div>
     </nav>
 
-
-    <!-- cotact us and thanku Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Contact Us Modal -->
+    <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="contactUsModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Contact Form -->
+                    <!-- Contact form goes here -->
                     <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" id="name" name="name" required>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Phone No:</label>
-                            <input type="tel" class="form-control" id="tel" name="tel" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
-
-                    <!-- Thank you message -->
-                    <div class="thank-you-message" id="thankYouMessage">
-                        <p>Thank you for connecting with us!</p>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ============================================ -->
 
-
-
-    <!-- Carousel 100% Fullscreen -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="bg bg1"></div>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <!-- <h1 class="hidden-xs">A world where it should never hurt to be a child</h1> -->
-                        <h1 class="visible-xs">A world where it should never hurt to be a child</h1>
-                        <!-- <p class="hidden-xs">We ask you to participate in our mission to bring a ray of hope and sunshine in the <br>lives of those who are less
-                        fortunate than us.</p> -->
-                        <p class="visible-xs">We ask you to participate in our mission to bring a ray of hope and
-                            sunshine in the <br>lives of those who are less
-                            fortunate than us</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal"
-                                data-target="#contentModal">Donate Now</a></p>
-                    </div>
+    <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="bg bg2"></div>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <!-- <h1 class="hidden-xs">Get involved and help some of the world’s most vulnerable children..</h1> -->
-                        <h1 class="visible-xs">Get involved and help some of the world’s most vulnerable children.</h1>
-                        <p>Keeping children safe and free from harm is what we believe in and what we do..</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal"
-                                data-target="#contentModal">Donate Now</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="bg bg3"></div>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <!-- <h1 class="hidden-xs">We go by the mantra that No Child is Born to Die.</h1> -->
-                        <h1 class="visible-xs">We go by the mantra that No Child is Born to Die.</h1>
-                        <p>We work relentlessly to ensure that children grow up healthy and enjoy a happy childhood.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button" data-toggle="modal"
-                                data-target="#contentModal">Donate Now</a></p>
-                    </div>
+                <div class="modal-body">
+                    <p>Thank you for connecting with us. We will get back to you soon!</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev d-none" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    </div>
+    
+
+
+
+
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./asset/image/banner/slider1.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 style>A world where it should never hurt to be a child
+                    </h1>
+                    <p>We ask you to participate in our mission to bring a ray of hope and sunshine in the <br>
+                        lives of those who are less fortunate than us</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                        View Details
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./asset/image/banner/slider2.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Get involved and help some of the world’s most vulnerable children.
+                    </h1>
+                    <p>Keeping children safe and free from harm is what we believe in and what we do...</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                        View Details
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./asset/image/banner/slider3.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>We go by the mantra that No Child is Born to Die.
+                    </h1>
+                    <p>We work relentlessly to ensure that children grow up healthy and enjoy a happy childhood.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next d-none" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <!-- /end Carousel 100% Fullscreen -->
 
-
-    <!-- help us Modal -->
-    <div class="modal fade" id="contentModal" tabindex="-1" role="dialog" aria-labelledby="contentModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Modals -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center" id="contentModalLabel">Account Details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="modal1Label">Details for Slide 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Image Container -->
-                    <div class="image-container">
-                        <!-- Add your image URL here -->
-                        <img src="./asset/image/qr-code/Screenshot 2024-01-12 221439.png" alt="Image" class="img-fluid">
-                    </div>
-
-                    <!-- Image Heading and Paragraph -->
-                    <div>
-                        <h3 class="image-heading">For Indian Donors</h3>
-                        <p class="image-paragraph">
-                            Bank Of Baroda <br>
-                            City: Nagpur <br>
-                            Contact No: +91 8010996763 <br>
-                            Account Name: Suvidha Mahila Mandal <br>
-                            Suvidha Account No: 97840100027609 <br>
-                            IFSC Code: BARB0DBKPAR</p>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1507813686138-954c2c879e8d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRvZyUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D"
+                        class="img-fluid" alt="Slide 1 Details">
+                    <p>Additional details for the first slide.</p>
                 </div>
             </div>
         </div>
     </div>
+
+
+
 
 
 
@@ -200,7 +198,8 @@
                     <div class="services-card-right">
                         <h3>Healthy Food</h3>
                         <p>
-                            By focusing on healthy food donations, our NGO aims to improve the well-being and quality of
+                            By focusing on healthy food donations, our NGO aims to improve the well-being and
+                            quality of
                             life for individuals and
                             communities in need.</p>
                         <a href="#">Read More</a>
@@ -225,7 +224,8 @@
                     <div class="services-card-right">
                         <h3>Tree Plantation</h3>
                         <p>
-                            Through community engagement and active participation, we successfully planted thousands of
+                            Through community engagement and active participation, we successfully planted thousands
+                            of
                             trees, fostering a greener
                             and healthier ecosystem for future generations.</p>
                         <a href="#">Read More</a>
@@ -250,7 +250,8 @@
                     <div class="services-card-right">
                         <h3>Primary Education</h3>
                         <p>
-                            By collaborating with local communities and educators, we aim to empower children with the
+                            By collaborating with local communities and educators, we aim to empower children with
+                            the
                             knowledge and skills they
                             need for a brighter future.</p>
                         <a href="#">Read More</a>
@@ -272,7 +273,153 @@
             </div>
         </div>
     </section>
-    <!--==============================service service service============================================  -->
+
+
+
+
+
+
+    <!-- ====================================Timeline Start====================================================================== -->
+    <div class="bodyyyy">
+        <section class="timeline_area section_padding_130">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-lg-6">
+
+                        <div class="section_heading text-center timeline">
+                            <h1>Our History</h1>
+                            <h3>A brief stories of our 10 years NGO journey</h3>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="apland-timeline-area">
+
+                            <div class="single-timeline-area">
+                                <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>Our Future</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s"
+                                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-address-card"
+                                                    aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Help senior citizens</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s"
+                                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="timeline-text">
+                                                <h6>Sponsor a child</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s"
+                                            style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-address-book"
+                                                    aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Help the ecosystems</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-timeline-area">
+                                <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>2020</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s"
+                                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-briefcase"
+                                                    aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Pure Food & Water
+
+                                                </h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s"
+                                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="timeline-text">
+                                                <h6>Health & Medicine</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single-timeline-area">
+                                <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s"
+                                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                                    <p>2019</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s"
+                                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="timeline-text">
+                                                <h6>Education</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s"
+                                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="timeline-text">
+                                                <h6>Tree Plantation</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s"
+                                            style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
+                                            <div class="timeline-icon"><i class="fa fa-picture-o"
+                                                    aria-hidden="true"></i></div>
+                                            <div class="timeline-text">
+                                                <h6>Social Care</h6>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 
@@ -301,9 +448,6 @@
             </div>
         </div>
     </section>
-    <!--==============================how it works========================================================  -->
-
-
 
 
     <!--=================================Meet Our team Section==================================================  -->
@@ -336,7 +480,7 @@
 
         <div class="cards">
             <div class="card">
-                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <img class="card-img" src="./asset/image/team-image/Shobha_Motghare.jpeg">
                 <div class="card-info-wrapper">
                     <h2>Shobha Motghare</h2>
                     <h3 class="card-description">Secretary</h3>
@@ -362,7 +506,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <img class="card-img" src="./asset/image/team-image/Payal_Badhe.jpg">
                 <div class="card-info-wrapper">
                     <h2>Payal Badhe</h2>
                     <h3 class="card-description">President</h3>
@@ -388,7 +532,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <img class="card-img" src="./asset/image/team-image/Bharti_Shendre.jpg">
                 <div class="card-info-wrapper">
                     <h2>Bharti Shendre
                     </h2>
@@ -415,9 +559,9 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img" src="https://picsum.photos/id/1/300/300">
+                <img class="card-img" src="./asset/image/team-image/Nilima_Kalambe.jpg">
                 <div class="card-info-wrapper">
-                    <h2>RNilima Kalambe
+                    <h2>Nilima Kalambe
                     </h2>
                     <h3 class="card-description">Advisor</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -472,7 +616,6 @@
 
         </div>
     </div>
-    <!--=================================Meet Our team Section==================================================  -->
 
 
 
@@ -484,65 +627,137 @@
 
 
 
-<!-- ================================================================================== -->
-    <div class="container-fluid image-gallery-modal">
-        <h1 class="container-heading"> Event Gallery</h1>
+    <!-- ==============================Our Event Gallery==================================================== -->
+    <div class="container-fluid gallery image-gallery-modal">
+        <h1 class="container-heading text-center event-gallery">
+             Event Gallery</h1>
+        
         <div class="image-button-container">
-            <!-- Image button -->
             <div class="image-button">
-                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
-                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpScmnaYyz2epHpGjM63Wf5yYPFQkb2844iS-t5CtyMg&s" alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#tree--plantation">
                 <div class="image-description">
-                    <h5>Image 1 Heading</h5>
-                    <p>Description for Image 1</p>
+                    <h5>Tree Plantation
+                    </h5>
+                    <p> Join us in nurturing the Earth's embrace, one tree at a time. Together, let's create a
+                        greener
+                        tomorrow and breathe life into our planet</p>
                 </div>
             </div>
-            <!-- Image button -->
+
             <div class="image-button">
-                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
-                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <img src="./asset/image/Gallery/Fundrasing/Fundraising.jpg" alt="Open Gallery" class="img-fluid"
+                    data-toggle="modal" data-target="#fund--rasing">
                 <div class="image-description">
-                    <h5>Image 2 Heading</h5>
-                    <p>Description for Image 2</p>
+                    <h5>Fundraising Events
+                    </h5>
+                    <p> Unlock the power of generosity at our Fundraising Event. Your support will ignite positive
+                        change and uplift lives in our community.</p>
                 </div>
             </div>
+
             <div class="image-button">
-                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
-                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <img src="./asset/image/Gallery/Cloth Distribution/Cloths-Distribution.jpg" alt="Open Gallery"
+                    class="img-fluid" data-toggle="modal" data-target="#cloth--distribution">
                 <div class="image-description">
-                    <h5>Image 3 Heading</h5>
-                    <p>Description for Image 3</p>
+                    <h5>Cloths Distribution
+                    </h5>
+                    <p> Providing warmth and dignity through clothing. Join us in our mission to bring smiles and
+                        comfort to those in need through our cloth distribution event.1</p>
                 </div>
             </div>
+
             <div class="image-button">
-                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
-                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+                <img src="./asset/image/Gallery/women day celebration/IMG_9601.jpg" alt="Open Gallery" class="img-fluid"
+                    data-toggle="modal" data-target="#myModal--1">
                 <div class="image-description">
-                    <h5>Image 4 Heading</h5>
-                    <p>Description for Image 4</p>
+                    <h5>Women's Day
+                    </h5>
+                    <p> Celebrating the strength, resilience, and achievements of women worldwide on this special
+                        Women's Day. Together, let's honor their contributions.2</p>
                 </div>
             </div>
-            <div class="image-button">
-                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
-                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+
+
+            <div class="image-button hidden">
+                <img src="./asset/image/Gallery/food distribution/1658587143227.jpeg" alt="Open Gallery"
+                    class="img-fluid" data-toggle="modal" data-target="#myModal--1">
                 <div class="image-description">
-                    <h5>Image 5 Heading</h5>
-                    <p>Description for Image 5</p>
+                    <h5>Food Donation by Our NGO
+                    </h5>
+                    <p> Your generous contributions can fill empty plates and bring smiles to those in need.
+                        Together,
+                        we can create a world where everyone has access to nutritious meals.</p>
                 </div>
             </div>
-            <div class="image-button">
-                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_170442629760.jpg"
-                    alt="Open Gallery" class="img-fluid" data-toggle="modal" data-target="#myModal">
+
+
+            <div class="image-button hidden">
+                <img src="./asset/image/Gallery/animal feeding/animal-feeding (12).jpg" alt="Open Gallery"
+                    class="img-fluid" data-toggle="modal" data-target="#animal--feeding">
                 <div class="image-description">
-                    <h5>Image 6 Heading</h5>
-                    <p>Description for Image 6</p>
+                    <h5>Ensuring Healthy Animals
+                    </h5>
+                    <p> Join us in providing sustenance and compassion to our furry companions. Together, let's make
+                        a
+                        positive impact on their lives through our Animal Feeding event.</p>
                 </div>
             </div>
-            <!-- Add more image buttons as needed -->
+
+            <div class="image-button hidden">
+                <img src="./asset/image/Gallery/Sanitary-Pad/Sanitary-Pads.jpg" alt="Open Gallery" class="img-fluid"
+                    data-toggle="modal" data-target="#myModal--1">
+                <div class="image-description">
+                    <h5>Sanitary Pads Distribution
+                    </h5>
+                    <p> Breaking barriers and promoting menstrual health with our Sanitary Pad Initiative. Together,
+                        let's empower women and ensure access to safe and dignified hygiene.</p>
+                </div>
+            </div>
+            
+            <div class="image-button hidden">
+                <img src="./asset/image/Gallery/free workshop/1655482997517.jpeg" alt="Open Gallery" class="img-fluid"
+                    data-toggle="modal" data-target="#myModal--1">
+                <div class="image-description">
+                    <h5>Free Workshops
+                    </h5>
+                    <p> Discover new skills, ignite your passions, and embrace lifelong learning with our engaging
+                        and
+                        enriching free workshops.</p>
+                </div>
+            </div>
+
+            <div class="image-button hidden">
+                <img src="./asset/image/Gallery/book distribution/1 (10).jpg" alt="Open Gallery" class="img-fluid"
+                    data-toggle="modal" data-target="#book--distribution">
+                <div class="image-description">
+                    <h5>Book Distribution
+                    </h5>
+                    <p> Discover new skills, ignite your passions, and embrace lifelong learning with our engaging
+                        and
+                        enriching free workshops.</p>
+                </div>
+            </div>
+
+            <div class="image-button hidden">
+                <img src="./asset/image/Gallery/free Education/FreeEducation.jpg" alt="Open Gallery" class="img-fluid"
+                    data-toggle="modal" data-target="#myModal--1">
+                <div class="image-description">
+                    <h5>Free Education
+                    </h5>
+                    <p> Discover new skills, ignite your passions, and embrace lifelong learning with our engaging
+                        and
+                        enriching free workshops.</p>
+                </div>
+            </div>
+            <!-- Add more hidden image buttons as needed -->
         </div>
-    
-        <!-- The Modal -->
-        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div id="viewAllButton" class="view-all-button">
+            View All
+        </div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div id="tree--plantation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -553,19 +768,280 @@
                     <div class="modal-body">
                         <div id="carouselExample" class="carousel slide" data-ride="carousel">
                             <div class="modal-grid">
-                                <img src="https://media.gettyimages.com/id/128110663/photo/rekha-bollywood-actress-with-princess-bhargavi-kumari-mewar-and-her-daughter-at-holi-festival.jpg?s=612x612&w=0&k=20&c=xr4YMJjkPmbOAqPrb2uoWED72yUAP5eFQUSHevSQs54="
-                                    class="img-fluid" alt="Gallery Image">
+                                <img src="./asset/image/Gallery/tree plantation/depositphotos_150267710-stock-photo-hands-holding-sprouts.jpg" class="img-fluid" alt="Gallery Image">
+                                <img src="./asset/image/Gallery/tree plantation/depositphotos_199511230-stock-photo-volunteers-planting-tree-green-park.jpg" class="img-fluid" alt="Gallery Image">
+                                <img src="./asset/image/Gallery/tree plantation/photo-1584062134595-dacde0a2336d.avif" class="img-fluid" alt="Gallery Image">
+                                <img src="./asset/image/Gallery/tree plantation/photo-1625758476104-f2ed6c81248f.avif" class="img-fluid"
+                                    alt="Gallery Image">
+                                        <img src="./asset/image/Gallery/tree plantation/premium_photo-1658506799688-b5a1f54e3c7e.avif" class="img-fluid"
+                                            alt="Gallery Image">
+    <img src="./asset/image/Gallery/tree plantation/premium_photo-1663127612227-3eb8fc010f11.avif" class="img-fluid"
+        alt="Gallery Image">
                                 <!-- Add more images as needed -->
-                                <img src="https://images.pexels.com/photos/1253364/pexels-photo-1253364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                    class="img-fluid" alt="Gallery Image">
-                                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_1704426297100.jpg"
-                                    class="img-fluid" alt="Gallery Image">
-                                <img src="https://images.filmibeat.com/webp/ph-big/2024/01/chaitra-j-achar-viral-bold-photoshoot-viral_1704426297100.jpg"
-                                    class="img-fluid" alt="Gallery Image">
-                                <img src="https://images.filmibeat.com/webp/ph-big/2020/02/actresses-who-look-hot-in-red_158165968520.jpg"
-                                    class="img-fluid" alt="Gallery Image">
-                                <img src="https://images.filmibeat.com/webp/ph-big/2023/12/megha-shukla-looks-stunning-photoshoot_1703654923130.jpg"
-                                    class="img-fluid" alt="Gallery Image">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fund--rasing" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="modal-grid">
+                                <img src="./asset/image/Gallery/Fundrasing/Fundraising.jpg" class="img-fluid" alt="Gallery Image">
+
+                                <!-- Add more images as needed -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cloth--distribution" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="modal-grid">
+                                <img src="./asset/image/Gallery/book distribution/1 (1).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+
+                                <!-- Add more images as needed -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div id="women--day" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="modal-grid">
+                        <img src="./asset/image/Gallery/book distribution/1 (1).jpeg" class="img-fluid"
+                            alt="Gallery Image">
+
+                        <!-- Add more images as needed -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="food-donation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="modal-grid">
+                        <img src="./asset/image/Gallery/book distribution/1 (1).jpeg" class="img-fluid"
+                            alt="Gallery Image">
+
+                        <!-- Add more images as needed -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="animal--feeding" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="modal-grid">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (1).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (2).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (3).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (4).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (5).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (6).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (7).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (8).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (9).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (10).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (11.jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/animal feeding/animal-feeding (12).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+        
+                                <!-- Add more images as needed -->
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+
+
+<div id="sanitary--Pads" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="modal-grid">
+                        <img src="./asset/image/Gallery/book distribution/1 (1).jpeg" class="img-fluid"
+                            alt="Gallery Image">
+
+                        <!-- Add more images as needed -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="free--workshop" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="modal-grid">
+                        <img src="./asset/image/Gallery/book distribution/1 (1).jpeg" class="img-fluid"
+                            alt="Gallery Image">
+
+                        <!-- Add more images as needed -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div id="book--distribution" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="modal-grid">
+                                <img src="./asset/image/Gallery/book distribution/1 (1).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (1).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (2).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (3).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (4).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (5).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (6).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (7).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (8).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (9).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (10).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <img src="./asset/image/Gallery/book distribution/1 (11).jpg" class="img-fluid"
+                                    alt="Gallery Image">
+                                <!-- Add more images as needed -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="FreeEducation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-container">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                            <div class="modal-grid">
+                                <img src="./asset/image/Gallery/book distribution/1 (1).jpeg" class="img-fluid"
+                                    alt="Gallery Image">
+        
+                                <!-- Add more images as needed -->
+        
                             </div>
                         </div>
                     </div>
@@ -573,21 +1049,34 @@
             </div>
         </div>
     </div>
-<!-- ================================================================================== -->
+
+
+
+
+
+
+
+
+
 
 
 
 
     <!-- ====================================testimonial section ================================ -->
+
     <div class="container-fluid testimonial-border">
         <div class="container">
+            <h2 class="testimonial-heading">Customer Testimonials <br> <span>What people are talking about our
+                    charity
+                    activities</span></h2>
             <div id="testimonialSlider" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="testimonial-container">
-                            <h2 class="testimonial-heading">Customer Testimonials</h2>
-                            <div class="testimonial-card">
-                                <img src="customer1.jpg" alt="Customer 1" class="testimonial-image">
+
+                            <div class="testimonial-card   testimonialll ">
+                                <img src="./asset/image/Testimonial-Image/1 (1).png" alt="Customer 1"
+                                    class="testimonial-image">
                                 <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit. Nulla facilisi."</p>
                                 <h5>Customer 1</h5>
@@ -596,9 +1085,58 @@
                     </div>
                     <div class="carousel-item">
                         <div class="testimonial-container">
-                            <h2 class="testimonial-heading">Customer Testimonials</h2>
-                            <div class="testimonial-card">
-                                <img src="customer2.jpg" alt="Customer 2" class="testimonial-image">
+                            <!-- <h2 class="testimonial-heading">Customer Testimonials</h2> -->
+                            <div class="testimonial-card   testimonialll">
+                                <img src="./asset/image/Testimonial-Image/1 (20).png" alt="Customer 1"
+                                    class="testimonial-image">
+                                <p class="testimonial-text">"Pellentesque habitant morbi tristique senectus et
+                                    netus et malesuada fames ac turpis egestas."</p>
+                                <h5>Customer 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-container">
+                            <!-- <h2 class="testimonial-heading">Customer Testimonials</h2> -->
+                            <div class="testimonial-card   testimonialll">
+                                <img src="./asset/image/Testimonial-Image/1 (5).png" alt="Customer 1"
+                                    class="testimonial-image">
+                                <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nulla facilisi."</p>
+                                <h5>Customer 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-container">
+                            <!-- <h2 class="testimonial-heading">Customer Testimonials</h2> -->
+                            <div class="testimonial-card   testimonialll">
+                                <img src="./asset/image/Testimonial-Image/1 (4).png" alt="Customer 1"
+                                    class="testimonial-image">
+                                <p class="testimonial-text">"Pellentesque habitant morbi tristique senectus et
+                                    netus et malesuada fames ac turpis egestas."</p>
+                                <h5>Customer 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-container">
+                            <!-- <h2 class="testimonial-heading">Customer Testimonials</h2> -->
+                            <div class="testimonial-card   testimonialll">
+                                <img src="./asset/image/Testimonial-Image/1 (3).png" alt="Customer 1"
+                                    class="testimonial-image">
+                                <p class="testimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Nulla facilisi."</p>
+                                <h5>Customer 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-container">
+                            <!-- <h2 class="testimonial-heading">Customer Testimonials</h2> -->
+                            <div class="testimonial-card   testimonialll">
+                                <img src="./asset/image/Testimonial-Image/1 (2).png" alt="Customer 1"
+                                    class="testimonial-image">
                                 <p class="testimonial-text">"Pellentesque habitant morbi tristique senectus et
                                     netus et malesuada fames ac turpis egestas."</p>
                                 <h5>Customer 2</h5>
@@ -634,7 +1172,8 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
                                 <h4>Find us</h4>
-                                <span>khanpur Akbar Jaunpur 222001</span>
+                                <span>Suvidha Mahila Mandal, Saoner
+                                    Nagpur, Maharashtra 441102</span>
                             </div>
                         </div>
                     </div>
@@ -643,7 +1182,9 @@
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
                                 <h4>Call us</h4>
-                                <span>7897173138</span>
+                                <span>+91 7020044091
+
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -652,7 +1193,7 @@
                             <i class="fas fa-envelope-open"></i>
                             <div class="cta-text">
                                 <h4>Mail us</h4>
-                                <span>manseeprince06@gmail.com</span>
+                                <span> info@suvidhafoundationedutech.org</span>
                             </div>
                         </div>
                     </div>
@@ -664,24 +1205,26 @@
                     <div class="col-lg-4">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="#"><img decoding="async" src="./image/logo2.png" class="img-fluid"></a>
+                                <a href="#"><img decoding="async" src="./asset/image/logo/SuvidhaLogo.png"
+                                        class="img-fluid"></a>
                             </div>
                             <div class="footer-text">
-                                <p>An online doctor consultation has many advantages over an in-person consultation.
-                                    You
-                                    can
-                                    easily avoid the wait time
-                                    associated with in-person appointments. Additionally, you can take as much time
-                                    as
-                                    you
-                                    need during the consultation
-                                    without feeling rushed.</p>
+                                <p>बच्चों के आंसू कड़वे होते हैं : उन्हें मीठा करिये। <br>
+
+                                    बच्चों की जिज्ञासा गहरी होती है : उसे शांत करिये। <br>
+
+                                    बच्चों का दुःख तीव्र होता है: इसे उससे ले लें। <br>
+
+                                    बच्चों का दिल कोमल होता है: इसे कठोर ना बनाएं।</p>
                             </div>
                             <div class="footer-social-icon">
                                 <span>Follow us</span>
-                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                                <a href="https://www.facebook.com/suvidhamahilamandal/"><i
+                                        class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="https://www.linkedin.com/company/suvidha-foundation/mycompany/"><i
+                                        class="fab fa-linkedin twitter-bg"></i></a>
+                                <a href="https://www.instagram.com/suvidha_mahila_mandal/?igshid=YmMyMTA2M2Y%3D"><i
+                                        class="fab fa-instagram instagram-bg"></i></a>
                             </div>
                         </div>
                     </div>
@@ -691,13 +1234,19 @@
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Video Consultant</a></li>
-                                <li><a href="#">Medicine</a></li>
-                                <li><a href="#">Lab Test</a></li>
-                                <li><a href="#">Find Doctor</a></li>
-                                <li><a href="#">Comman Disease</a></li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><a href="https://suvidhafoundationedutech.org/Themes/doc/80G_APROVAL.pdf">80G
+                                        Certificate</a></li>
+                                <li><a href="https://suvidhafoundationedutech.org/Themes/doc/12A_APPROVAL.pdf">12A
+                                        Certificate</a></li>
+                                <li><a href="https://suvidhafoundationedutech.org/Themes/doc/CSR.PDF">CSR
+                                        Certificate</a></li>
+                                <li><a
+                                        href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_darpan_portal_registration.pdf">Suvidha
+                                        Darpan Registration</a></li>
+                                <li><a href="https://suvidhafoundationedutech.org/Themes/doc/suvidha_pan_card.pdf">Suvidha
+                                        Pan Card</a></li>
+                                <li><a href="#">Verify Your Certificate</a></li>
+                                <li><a href="#" onclick="openModal()">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -726,7 +1275,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text mb-3">
-                            <p>Copyright © 2021, All Right Reserved <a href="#">A Doctor's Diary</a></p>
+                            <p>Copyright © 2021, All Right Reserved <a href="#">Suvidha Mahila Foundation</a></p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 text-center pt-3 d-none d-lg-block">
@@ -736,7 +1285,9 @@
                                 <li><a href="#">Terms</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact
+                                        Us</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -749,24 +1300,43 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     <!-- Bootstrap JS and Popper.js -->
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/b3263a74b4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b3263a74b4.js" crossorigin="anonymous"></script>
+
     <script src="./script/script.js"></script>
 
 </body>
+<script>
+    $(document).ready(function () {
+        $("#contactForm").submit(function (event) {
+            event.preventDefault();
+            showThankYouMessage();
+        });
+    });
+
+    function showThankYouMessage() {
+        // Hide the contact modal
+        $("#contactUsModal").modal("hide");
+
+        // Show the thank you modal
+        $("#thankYouModal").modal("show");
+
+        // Close the thank you modal after a delay (3 seconds in this example)
+        setTimeout(function () {
+            $("#thankYouModal").modal("hide");
+        }, 3000);
+    }
+</script>
+
 
 </html>
