@@ -49,3 +49,10 @@
 .modal-body img {
     width: 100%; /* Make sure images in modals fill the modal width */
 }
+
+
+.qr-codee{
+    width: 150px !important;
+    /* border: 2px solid red; */
+    margin-left: 30%;
+}
